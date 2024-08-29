@@ -1,1 +1,3 @@
-# autoencoderprofiling
+# Auto-Encoder Profiling
+
+El objetivo es lograr generar perfiles de acciones utilizando como punto de partida los datos financieros de cada empresa. Para ello se va a utilizar una tecnica de reducción de dimensionalidad con Auto-encoders que permita posicionar a cada empresa dentro de un espacio de dos dimensiones. Una vez obtenido esto, se van a probar distintos tipos de clusterización que permitan identificar grupos de empresas con potencial de crecimiento al largo plazo.
