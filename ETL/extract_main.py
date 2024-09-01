@@ -74,6 +74,8 @@ def getSymbols(mongoClient:MongoClient,BalanceSheet:bool = False, IncomeStatemen
     return symbolLS
 
 if __name__ == '__main__':
+
+    os.chdir(os.path.abspath(__file__)+'/..')
     
     load_dotenv()
 
@@ -90,7 +92,8 @@ if __name__ == '__main__':
     IncomeStatement = False
     CashFlow        = True
 
-    tickers_df = pd.read_csv('MVPs/Large.csv')
+    file = os.path.abspath('Large.csv')
+    tickers_df = pd.read_csv(file)
     tickers = set(tickers_df.Ticker.values)
     
     alphaClient = gd.AlphaConnect(apikey,check=False)

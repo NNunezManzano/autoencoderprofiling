@@ -4,3 +4,4 @@
 *.csv
 test.ipynb
 __pycache__
+test.py
